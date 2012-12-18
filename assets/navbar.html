@@ -1,0 +1,17 @@
+<table border="0" width="60%">
+    <tr>
+        <td align="left" width="20%">[ <a href="{{ first }}">First</a> ]</td>
+        {% if index == 1 %}
+        <td width="20%">&nbsp;</td>
+        {% else %}
+        <td align="center" width="20%"><a href="{{ prev }}" title="previous image">&lt;&lt;&lt;</a></td>
+        {% endif %}
+        <td align="center" width="20%"><a href="index.html" title="main page">Index</a></td>
+        {% if index == length %}
+        <td width="20%">&nbsp;</td>
+        {% else %}
+        <td align="center" width="20%"><a href="{{ next }}" title="next image">&gt;&gt;&gt;</a></td>
+        {% endif %}
+        <td align="right" width="20%">[ <a href="{{ last }}">Last</a> ]</td>
+    </tr>
+</table>

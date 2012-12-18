@@ -1,0 +1,14 @@
+{% extends "_layout.html" -%}
+{% block body -%}
+<center>
+    <h1>Image Gallery</h1>
+    <p>{{ urls|length }} images</p>
+</center>
+<ol align="left">
+{% set counter = 0 -%}
+{% for url in urls -%}
+    <li><a href="{{ counter }}.html">{{ url }}</a></li>
+{% set counter = counter + 1 -%}
+{% endfor -%}
+</ol>
+{%- endblock body %}

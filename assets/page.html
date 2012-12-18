@@ -1,0 +1,49 @@
+{% extends "_layout.html" -%}
+{% block body -%}
+<table border="0" width="100%" cellpadding="5">
+    <tr>
+        <td width="33%">
+            <b>Direct link:</b> <a href="{{ url }}">{{ url }}</a>{% include "clippy.html" -%}
+        </td>
+        <td width="33%" align="center">
+            {% include 'navbar.html' -%}
+        </td>
+        <td width="33%" align="right">
+            [{{ index }} of {{ length }}]&nbsp;&nbsp;&nbsp;({{ progress }}%)
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+            <figure>
+                {% if index == length %}
+                <img src="{{ url }}">
+                {% else %}
+                <a href="{{ next }}" title="click for the next image"><img src="{{ url }}"></a>
+                {% endif %}
+            </figure>
+        </td>
+    </tr>
+    <tr>
+        <td width="33%">
+            &nbsp;
+        </td>
+        <td width="33%" align="center">
+            {% include 'navbar.html' -%}
+        </td>
+        <td width="33%" align="center">
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            {% for n in range(length) -%}
+            [&nbsp;<a href="{{ n }}.html">{{ n }}</a>&nbsp;]
+            {% endfor -%}
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+    </tr>
+</table>
+{% endblock body -%}
