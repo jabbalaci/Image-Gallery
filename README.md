@@ -1,4 +1,4 @@
-Image-Gallery
+Image Gallery
 =============
 
 Creates a stylish image gallery from a list of URLs.
@@ -7,6 +7,8 @@ Typical use case: you scrape the URLs of some images and
 you want to visualize them.
 
 Live demo: [here](https://dl.dropbox.com/u/144888/wordpress/20121218_image-gallery/index.html)
+
+Blog post: [here](http://ubuntuincident.wordpress.com/2012/12/18/image-gallery-from-a-list-of-urls/)
 
 
 Usage
@@ -21,8 +23,8 @@ Credits
 -------
 
 This image gallery is based on another project called
-[gallerize](http://homework.nwsnet.de/). gallerize works
-with *local* image files.
+[gallerize](https://github.com/homeworkprod/gallerize).
+gallerize works with *local* image files.
 
 My image gallery works with *remote* files. My idea is that
 you have a list of image URLs (that you scraped for instance)
