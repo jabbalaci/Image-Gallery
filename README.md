@@ -6,6 +6,8 @@ Creates a stylish image gallery from a list of URLs.
 Typical use case: you scrape the URLs of some images and
 you want to visualize them.
 
+Live demo: [here](https://dl.dropbox.com/u/144888/wordpress/20121218_image-gallery/index.html)
+
 
 Usage
 -----
